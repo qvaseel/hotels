@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отели</title>
+    <link rel="stylesheet" href="style.css">
+    <link type="image/x-icon" href="img/favicon.png" rel="shortcut icon">
+    <link type="Image/x-icon" href="img/favicon.png" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Ubuntu&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- вся старница -->
+    <div class="container">
+        <!-- шапка -->
+        <header class="head">
+            <nav class="menu_wrapper">
+                <a href="#" class="logo_link">
+                    <img src="img/logo.svg" alt="logo_icon">
+                    <p>Отели</p>
+                </a>
+                <div class="nav" id="menu">
+                    <a href="#">
+                        <p>Главная</p>
+                    </a>
+                    <a href="#">
+                        <p>Бронирование</p>
+                    </a>
+                    <a href="#">
+                        <p>О нас</p>
+                    </a>
+                    <a href="#">
+                        <p>Контакты</p>
+                    </a>
+                </div>
+                <div class="icons">
+                    <a href="#"><img src="img/person.svg" alt="person"></a>
+                    <a href="#"><img src="img/location.svg" alt="location"></a>
+                </div>
+                <button class="navbar_toggler" id="navbar_toggler" type="button" onclick="Show()">
+                    <img src="img/bars.png" alt="bars" width="30">
+                </button>
+            </nav>
+        </header>
+        <!-- основной блок -->
+        <main>
+            <div class="main">
+                <h1>Лучшие отели</h1>
+                <p class="fish_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div class="menu">
+                    <div class="buttons">
+                        <button class="button_star" id="1" onclick="ShowStars(this)">1 звезда</button>
+                        <button class="button_star" id="2" onclick="ShowStars(this)">2 звезды</button>
+                        <button class="button_star" id="3" onclick="ShowStars(this)">3 звезды</button>
+                        <button class="button_star" id="4" onclick="ShowStars(this)">4 звезды</button>
+                        <button class="button_star" id="5" onclick="ShowStars(this)">5 звезд</button>
+                    </div>
+                    <p>Смотреть все</p>
+                </div>
+                <div class="cards">
+                    <div class="card" data_rait="4">
+                        <div class="card_img">
+                            <div class="img_hotel">
+                                <img src="img/hotel1.png" alt="hotel_one">
+                            </div>
+                            <div class="img_like">
+                                <img id="image" src="img/like.svg" alt="like" onclick="imgsrc(this)">
+                            </div>
+                        </div>
+                        <div class="hotel_information">
+                            <p class="card_location_text">Город, район, улица, дом</p>
+                            <p class="card_name_hotel">Danubius Hotel Regents Park</p>
+                            <div class="price">
+                                <p>5000 ₽/сутки</p>
+                                <div class="stars">
+                                    <img src="img/full_star.svg" alt="full_star">
+                                    <img src="img/full_star.svg" alt="full_star">
+                                    <img src="img/full_star.svg" alt="full_star">
+                                    <img src="img/full_star.svg" alt="full_star">
+                                    <img src="img/empty_star.svg" alt="empty_star">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="card_btn">Подробнее</button>
+                    </div>
+                    <div class="card" data_rait="5">
+                        <div class="card_img">
+                            <div class="img_hotel">
+                                <img src="img/hotel2.png" alt="hotel_two">
+                            </div>
+                            <div class="img_like">
+                                <img id="image" src="img/like.svg" alt="like" onclick="imgsrc(this)">
+                            </div>
+                        </div>
+                        <div class="hotel_information">
+                            <p class="card_location_text">Город, район, улица, дом</p>
+                            <p class="card_name_hotel">The Resident Soho</p>
+                            <div class="price">
+                                <p>10000 ₽/сутки</p>
+                                <div class="stars">
+                                    <img src="img/full_star.svg" alt="full_star">
+                                    <img src="img/full_star.svg" alt="full_star">
+                                    <img src="img/full_star.svg" alt="full_star">
+                                    <img src="img/full_star.svg" alt="full_star">
+                                    <img src="img/full_star.svg" alt="full_star">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="card_btn">Подробнее</button>
+                    </div>
+                    <div class="card" data_rait="3">
+                        <div class="card_img">
+                            <div class="img_hotel">
+                                <img src="img/hotel3.png" alt="hotel_three">
+                            </div>
+                            <div class="img_like">
+                                <img id="image" src="img/like.svg" alt="like" onclick="imgsrc(this)">
+                            </div>
+                        </div>
+                        <div class="hotel_information">
+                            <p class="card_location_text">Город, район, улица, дом</p>
+                            <p class="card_name_hotel">London Bridge Hotel</p>
+                            <div class="price">
+                                <p>4800 ₽/сутки</p>
+                                <div class="stars">
+                                    <img src="img/full_star.svg" alt="full_star">
+                                    <img src="img/full_star.svg" alt="full_star">
+                                    <img src="img/full_star.svg" alt="full_star">
+                                    <img src="img/empty_star.svg" alt="empty_star">
+                                    <img src="img/empty_star.svg" alt="empty_star">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="card_btn">Подробнее</button>
+                    </div>
+                    <div class="card" data_rait="4">
+                        <div class="card_img">
+                            <div class="img_hotel">
+                                <img src="img/hotel4.png" alt="hotel_four">
+                            </div>
+                            <div class="img_like">
+                                <img id="image" src="img/like.svg" alt="like" onclick="imgsrc(this)">
+                            </div>
+                        </div>
+                        <div class="hotel_information">
+                            <p class="card_location_text">Город, район, улица, дом</p>
+                            <p class="card_name_hotel">The Hotel Blursee</p>
+                            <div class="price">
+                                <p>6000 ₽/сутки</p>
+                                <div class="stars">
+                                    <img src="img/full_star.svg" alt="full_star">
+                                    <img src="img/full_star.svg" alt="full_star">
+                                    <img src="img/full_star.svg" alt="full_star">
+                                    <img src="img/full_star.svg" alt="full_star">
+                                    <img src="img/empty_star.svg" alt="empty_star">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="card_btn">Подробнее</button>
+                    </div>
+                    <div class="card" data_rait="4">
+                        <div class="card_img">
+                            <div class="img_hotel">
+                                <img src="img/hotel5.png" alt="hotel_five">
+                            </div>
+                            <div class="img_like">
+                                <img id="image" src="img/like.svg" alt="like" onclick="imgsrc(this)">
+                            </div>
+                        </div>
+                        <div class="hotel_information">
+                            <p class="card_location_text">Город, район, улица, дом</p>
+                            <p class="card_name_hotel">The Resident Suns Hotel</p>
+                            <div class="price">
+                                <p>8000 ₽/сутки</p>
+                                <div class="stars">
+                                    <img src="img/full_star.svg" alt="full_star">
+                                    <img src="img/full_star.svg" alt="full_star">
+                                    <img src="img/full_star.svg" alt="full_star">
+                                    <img src="img/full_star.svg" alt="full_star">
+                                    <img src="img/empty_star.svg" alt="empty_star">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="card_btn">Подробнее</button>
+                    </div>
+                    <div class="card" data_rait="5">
+                        <div class="card_img">
+                            <div class="img_hotel">
+                                <img src="img/hotel6.png" alt="hotel_six">
+                            </div>
+                            <div class="img_like">
+                                <img id="image" src="img/like.svg" alt="like" onclick="imgsrc(this)">
+                            </div>
+                        </div>
+                        <div class="hotel_information">
+                            <p class="card_location_text">Город, район, улица, дом</p>
+                            <p class="card_name_hotel">The Hotel Chaziry</p>
+                            <div class="price">
+                                <p>18000 ₽/сутки</p>
+                                <div class="stars">
+                                    <img src="img/full_star.svg" alt="full_star">
+                                    <img src="img/full_star.svg" alt="full_star">
+                                    <img src="img/full_star.svg" alt="full_star">
+                                    <img src="img/full_star.svg" alt="full_star">
+                                    <img src="img/full_star.svg" alt="full_star">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="card_btn">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- подвал -->
+        <footer class="footer">
+            <form action="#">
+                <p class="foot_text">Подпишитесь на нашу рассылку, чтобы получать последние обновления и предложения
+                </p>
+                <p class="foot_fish_text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the
+                    industry's
+                </p>
+                <div class="form">
+                    <input type="text" placeholder="Введите свой email">
+                    <button type="submit" class="sub_btn">Подписаться</button>
+                </div>
+            </form>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
